@@ -1,0 +1,78 @@
+/*import fornts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 35px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(251, 198, 127);
+}
+
+header{
+    padding: 10px;
+}
+
+.departures{
+    background-color: rgb(9, 9, 9);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.departures table{
+    background-color: rgb(49, 49, 49);
+    text-align: left;
+}
+
+.departures table td{
+    height: 50px;
+}
+
+.departures table div{
+    border: solid 4px rgb(26, 26, 26);
+    background-color: black;
+    float: left;
+    height: 40px;
+}
+
+#time{
+    width: 260px;
+}
+
+#destination{
+    width: 230px;
+}
+
+#flight{
+    width:206px;
+}
+
+#gate{
+    width: 130px;
+}
+
+#remarks{
+    width: 260px;
+}
+
+.flip{
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
